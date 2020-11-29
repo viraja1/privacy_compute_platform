@@ -1,0 +1,27 @@
+version: '3.7'
+
+services:
+
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "3000:3000"
+    networks:
+      - compute
+    depends_on: 
+      - mongodb
+    env_file:
+      - .env
+    volumes:
+      - ./:/app
+      
+  mongodb:
+    image: mongo:4.4.2
+    networks:
+      - compute
+
+networks:
+  compute:
+    driver: bridge

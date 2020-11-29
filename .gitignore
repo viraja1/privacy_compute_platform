@@ -1,0 +1,6 @@
+.env
+node_modules
+.npmrc
+.idea
+result.txt
+test.jpg
