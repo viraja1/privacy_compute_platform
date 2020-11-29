@@ -2,6 +2,9 @@
 Privacy Compute Platform allows you to run complex compute jobs in Oasis secure enclaves, enabling you to analyze 
 sensitive data and provide valuable services to your users while maintaining their privacy.
 
+## Video Demo
+https://youtu.be/MaBHbEFLoco
+
 ## Getting Started
 
 1. Clone repo
